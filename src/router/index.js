@@ -1,11 +1,10 @@
 import Vue from 'vue' 
 import Router from 'vue-router' 
  
-const DashboardLayout = () => import(/* webpackChunkName: "dashboard" */ '../components/dashboardLayout.vue') 
+const DashboardLayout = () => import( /* webpackChunkName: "dashboard" */ '../components/dashboardLayout.vue') 
  
 function loadView(view) { 
-    return () => import(/* webpackChunkName: "view-
-    [request]" */ `../components/dashboardContents/${view}.vue`) 
+    return () => import(/* webpackChunkName: "view-[request]" */ `../components/dashboardContents/${view}.vue`) 
 } 
  
 const routes = [     
